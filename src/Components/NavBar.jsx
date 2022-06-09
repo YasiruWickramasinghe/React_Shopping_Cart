@@ -52,8 +52,8 @@ const NavBar = () => {
         <Navbag>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
+            width="4.5vw"
+            height="3.5vw"
             fill="currentColor"
             className="bi bi-handbag-fill"
             viewBox="0 0 16 16"
