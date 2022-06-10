@@ -219,14 +219,14 @@ const Cart = () => {
     dispatch(getTotals());
   }, [cart, dispatch]);
 
-  const handleAddToCart = (product) => {
-    dispatch(addToCart(product));
+  const handleAddToCart = (item) => {
+    dispatch(addToCart(item));
   };
-  const handleDecreaseCart = (product) => {
-    dispatch(decreaseCart(product));
+  const handleDecreaseCart = (item) => {
+    dispatch(decreaseCart(item));
   };
-  const handleRemoveFromCart = (product) => {
-    dispatch(removeFromCart(product));
+  const handleRemoveFromCart = (item) => {
+    dispatch(removeFromCart(item));
   };
   const handleClearCart = () => {
     dispatch(clearCart());
