@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
-import { addToCart } from "../Services/Features/Products/cartSlice";
+import { addToCart } from "../Services/Features/Cart/cartSlice";
 import { useGetAllProductsQuery } from "../Services/Features/Products/productsApi";
 
 import styled from "styled-components";
@@ -85,7 +85,6 @@ const Home = () => {
   const navigate = useNavigate();
 
   const { data, error, isLoading } = useGetAllProductsQuery();
-  console.log("Api", isLoading);
 
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
