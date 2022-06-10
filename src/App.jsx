@@ -9,6 +9,7 @@ import {
 import Cart from "./Components/Cart";
 import Home from "./Components/Home";
 import NavBar from "./Components/NavBar";
+import Form from "./Components/Form";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/cart" element={<Cart />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Form />} />
         </Routes>
       </Router>
     </div>
