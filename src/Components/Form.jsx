@@ -108,6 +108,8 @@ const Form = () => {
     e.preventDefault();
     dispatch(addToCart(values));
     navigate("/cart");
+
+    console.log(values)
   };
 
   const onChange = (e) => {
